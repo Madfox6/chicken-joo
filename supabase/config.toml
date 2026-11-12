@@ -1,0 +1,9 @@
+project_id = "xbvqeoxbfjlgmkwqfvms"
+
+# The gateway JWT check rejects some current signing keys before the function
+# runs. Each function checks the caller with auth.getUser and the profiles table.
+[functions.create-employee]
+verify_jwt = false
+
+[functions.reset-pin]
+verify_jwt = false
